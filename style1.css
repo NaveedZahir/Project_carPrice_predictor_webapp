@@ -1,4 +1,4 @@
-/* ── Page Title ── */
+
 .page-title {
     text-align: center;
     padding: 36px 20px 16px;
@@ -16,14 +16,14 @@
     color: black;
 }
 
-/* ── Form Wrapper ── */
+
 .form-wrapper {
     max-width: 680px;
     margin: 30px auto 50px;
     padding: 0 20px;
 }
 
-/* ── Form Rows ── */
+
 .form-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -41,14 +41,14 @@
     grid-column: 1 / -1;
 }
 
-/* ── Labels ── */
+
 .form-group label {
     font-size: 14px;
     color:balck;
     font-weight: bold;
 }
 
-/* ── Inputs & Selects ── */
+
 .form-wrapper input,
 .form-wrapper select {
     width: 100%;
@@ -72,7 +72,6 @@
     color: #bbb;
 }
 
-/* ── Submit Button ── */
 .btn-predict {
     width: 100%;
     padding: 13px;
@@ -128,7 +127,7 @@
     color: #b07080;
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 600px) {
     .form-row {
         grid-template-columns: 1fr;

@@ -1,9 +1,9 @@
-/* ── Budget Page Styles ── */
+
 
 .page-title {
     text-align: center;
     padding: 50px 20px 30px;
-    /* background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); */
+   
     color: white;
 }
 
@@ -18,7 +18,7 @@
     font-size: 1rem;
 }
 
-/* ── Form ── */
+
 .budget-wrapper {
     max-width: 1000px;
     margin: 40px auto;
@@ -88,7 +88,7 @@
     transform: translateY(-1px);
 }
 
-/* ── Results ── */
+
 .results-section {
     margin-top: 10px;
 }
@@ -114,7 +114,6 @@
     font-weight: 600;
 }
 
-/* ── Car Cards Grid ── */
 .cars-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -182,7 +181,7 @@
     font-size: 1rem;
 }
 
-/* ── Loading ── */
+
 .loading {
     text-align: center;
     padding: 40px;
@@ -203,7 +202,7 @@
     to { transform: rotate(360deg); }
 }
 
-/* ── No Results ── */
+
 .no-results {
     text-align: center;
     padding: 60px 20px;
@@ -221,7 +220,7 @@
     margin-bottom: 5px;
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 600px) {
     .form-row {
         flex-direction: column;

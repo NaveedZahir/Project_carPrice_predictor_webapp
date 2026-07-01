@@ -9,7 +9,7 @@
 </head>
 <body>
 
-    <!-- Navbar -->
+   
     <nav class="navbar">
         <div class="nav-logo">🚗 PakCarPrice</div>
         <ul class="nav-links">
@@ -21,17 +21,17 @@
         </ul>
     </nav>
 
-    <!-- Page Title -->
+  
     <div class="page-title">
         <h1>Search Cars in your Budget</h1>
         <p>Enter your budget range and find all available cars in Pakistan</p>
     </div>
 
-    <!-- Search Form -->
+    
     <div class="budget-wrapper">
         <div class="budget-form">
 
-            <!-- Price Range -->
+           
             <div class="form-row">
                 <div class="form-group">
                     <label for="min-price">Min Price (Lakhs)</label>
@@ -43,7 +43,6 @@
                 </div>
             </div>
 
-            <!-- Optional Filters -->
             <div class="form-row">
                 <div class="form-group">
                     <label for="budget-city">City (Optional)</label>
@@ -72,23 +71,21 @@
             <button class="btn-search" onclick="searchByBudget()">🔍 Search Cars</button>
         </div>
 
-        <!-- Results Section -->
         <div id="results-section" class="results-section" style="display:none;">
             <div class="results-header">
                 <h2>Results</h2>
                 <span id="results-count" class="results-count"></span>
             </div>
 
-            <!-- Loading -->
+           
             <div id="loading" class="loading" style="display:none;">
                 <div class="spinner"></div>
                 <p>Searching cars...</p>
             </div>
 
-            <!-- Cards Grid -->
+            
             <div id="cars-grid" class="cars-grid"></div>
 
-            <!-- No Results -->
             <div id="no-results" class="no-results" style="display:none;">
                 
                 <p>No cars found in this budget range.</p>

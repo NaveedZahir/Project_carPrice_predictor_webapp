@@ -4,7 +4,6 @@ async function searchByBudget() {
     const city = document.getElementById("budget-city").value;
     const transmission = document.getElementById("budget-transmission").value;
 
-    // Basic validation
     if (!min || !max) {
         alert("Please enter both min and max price.");
         return;
@@ -14,7 +13,7 @@ async function searchByBudget() {
         return;
     }
 
-    // Show results section and loading
+   
     document.getElementById("results-section").style.display = "block";
     document.getElementById("loading").style.display = "block";
     document.getElementById("cars-grid").innerHTML = "";

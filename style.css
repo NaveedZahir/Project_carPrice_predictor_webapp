@@ -11,7 +11,7 @@ body {
     
 }
 
-/* ── Navbar ── */
+
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,7 @@ body {
     font-weight: bold;
 }
 
-/* ── Hero ── */
+
 .hero {
     text-align: center;
     background: #fff;
@@ -81,7 +81,7 @@ body {
     background: #1d4ed8;
 }
 
-/* ── Stats ── */
+
 .stats-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -117,7 +117,7 @@ body {
     color: #888;
 }
 
-/* ── How It Works ── */
+
 .how-section {
     max-width: 880px;
     margin: 0 auto 36px;
@@ -169,7 +169,6 @@ body {
     line-height: 1.5;
 }
 
-/* ── Brands ── */
 .brands-section {
     max-width: 880px;
     margin: 0 auto 40px;
@@ -197,7 +196,7 @@ body {
     font-size: 14px;
 }
 
-/* ── Footer ── */
+
 footer {
     text-align: center;
     padding: 20px;
@@ -207,7 +206,7 @@ footer {
     color: #999;
 }
 
-/* ── Responsive ── */
+
 @media (max-width: 768px) {
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);

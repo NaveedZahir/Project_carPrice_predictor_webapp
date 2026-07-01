@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background:white;
+    color: #333;
+    
+}
+
+/* ── Navbar ── */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 14px 40px;
+    border-bottom: 1px solid #ddd;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-size: 15px;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #2563eb;
+    font-weight: bold;
+}
+
+/* ── Hero ── */
+.hero {
+    text-align: center;
+    background: #fff;
+    padding: 60px 20px 50px;
+}
+
+.hero h1 {
+    font-size: 28px;
+    color: orange;
+    margin-bottom: 12px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 28px;
+}
+
+.btn {
+    display: inline-block;
+    background: #2563eb;
+    color: #fff;
+    padding: 12px 36px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.btn:hover {
+    background: #1d4ed8;
+}
+
+/* ── Stats ── */
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    max-width: 880px;
+    margin: 36px auto;
+    padding: 0 20px;
+}
+
+.stat-card {
+    background: white ;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.stat-icon {
+    font-size: 26px;
+}
+
+.stat-number {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2563eb;
+}
+
+.stat-label {
+    font-size: 13px;
+    color: #888;
+}
+
+/* ── How It Works ── */
+.how-section {
+    max-width: 880px;
+    margin: 0 auto 36px;
+    padding: 0 20px;
+}
+
+.how-section h2 {
+    font-size: 22px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.steps-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.step {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 24px 16px;
+    text-align: center;
+}
+
+.step-number {
+    width: 36px;
+    height: 36px;
+    background: #2563eb;
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 auto 12px;
+}
+
+.step h3 {
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.step p {
+    font-size: 13px;
+    color: #777;
+    line-height: 1.5;
+}
+
+/* ── Brands ── */
+.brands-section {
+    max-width: 880px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
+}
+
+.brands-section h2 {
+    font-size: 22px;
+    color: red;
+    margin-bottom: 16px;
+}
+
+.brands-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.brand {
+    background:white ;
+    color: black;
+    border: 1px solid #bfdbfe;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+/* ── Footer ── */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-top: 1px solid #ddd;
+    font-size: 13px;
+    color: #999;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+    .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .steps-grid {
+        grid-template-columns: 1fr;
+    }
+    .navbar {
+        flex-direction: column;
+        gap: 12px;
+        padding: 14px 20px;
+    }
+    .nav-links {
+        gap: 16px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}

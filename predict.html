@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predict Price - PakCarPrice</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">🚗 PakCarPrice</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="predict.html" class="active">Predict Price</a></li>
+           
+            <li><a href="budget.html">Budget Search</a></li>
+         
+        </ul>
+    </nav>
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Car Price Prediction</h1>
+        <p>Fill in your car details to get an estimated price range</p>
+    </div>
+
+    <!-- Form -->
+    <div class="form-wrapper">
+        <form id="predict-form">
+
+            <!-- Row 1: Car Name + Model Year -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="car-name">Car Name</label>
+                    <select id="car-name" required>
+                        <option value="">Select car name</option>
+                        <option>Toyota Yaris</option>
+                        <option>Honda Civic</option>
+                        <option>BMW 5</option>
+                        <option>Audi A6</option>
+                        <option>Toyota Corolla</option>
+                        <option>Suzuki Alto</option>
+                        <option>Suzuki Swift</option>
+                        <option>Chery Tiggo</option>
+                        <option>Hyundai Elantra</option>
+                        <option>Nissan Dayz</option>
+                        <option>Toyota Vitz</option>
+                        <option>Suzuki Liana</option>
+                        <option>Suzuki Wagon</option>
+                        <option>Toyota Corona</option>
+                        <option>Toyota Land</option>
+                        <option>Toyota Hilux</option>
+                        <option>Daihatsu Cuore</option>
+                        <option>Suzuki Spacia</option>
+                        <option>Suzuki Every</option>
+                        <option>Toyota Raize</option>
+                        <option>Suzuki Kei</option>
+                        <option>Haval H6</option>
+                        <option>Suzuki Khyber</option>
+                        <option>Toyota Passo</option>
+                        <option>Toyota Aqua</option>
+                        <option>Suzuki Hustler</option>
+                        <option>Toyota C-HR</option>
+                        <option>Honda City</option>
+                        <option>KIA Sportage</option>
+                        <option>Toyota Premio</option>
+                        <option>Mitsubishi Pajero</option>
+                        <option>Toyota Mark</option>
+                        <option>Suzuki Mehran</option>
+                        <option>Audi A4</option>
+                        <option>Changan Karvaan</option>
+                        <option>MG ZS</option>
+                        <option>MG HS</option>
+                        <option>FAW Carrier</option>
+                        <option>Honda BR-V</option>
+                        <option>Hyundai Sonata</option>
+                        <option>Honda Accord</option>
+                        <option>Hyundai Tucson</option>
+                        <option>Honda Zest</option>
+                        <option>Sogo Pickup</option>
+                        <option>Hyundai Santa</option>
+                        <option>Toyota Fortuner</option>
+                        <option>Daihatsu Hijet</option>
+                        <option>Honda Vezel</option>
+                        <option>Daihatsu Mira</option>
+                        <option>Changan Oshan</option>
+                        <option>Suzuki FX</option>
+                        <option>Toyota Starlet</option>
+                        <option>Toyota Prado</option>
+                        <option>Toyota Prius</option>
+                        <option>Prince Pearl</option>
+                        <option>Mercedes Benz</option>
+                        <option>Mitsubishi EK</option>
+                        <option>Honda Life</option>
+                        <option>Suzuki Cultus</option>
+                        <option>JAC T9</option>
+                        <option>DFSK Glory</option>
+                        <option>Daihatsu Taft</option>
+                        <option>Daihatsu Charade</option>
+                        <option>Daihatsu Storia</option>
+                        <option>Daihatsu Atrai</option>
+                        <option>Chery QQ</option>
+                        <option>Audi A5</option>
+                        <option>Nissan Moco</option>
+                        <option>Suzuki Ravi</option>
+                        <option>Toyota Sienta</option>
+                        <option>Suzuki Cervo</option>
+                        <option>Hyundai Santro</option>
+                        <option>Toyota Harrier</option>
+                        <option>Suzuki Jimny</option>
+                        <option>KIA Picanto</option>
+                        <option>Daihatsu Rocky</option>
+                        <option>Subaru Stella</option>
+                        <option>Nissan Note</option>
+                        <option>Lexus RX</option>
+                        <option>Changan Alsvin</option>
+                        <option>Suzuki Bolan</option>
+                        <option>KIA Classic</option>
+                        <option>Daewoo Racer</option>
+                        <option>KIA Stonic</option>
+                        <option>Mitsubishi Mirage</option>
+                        <option>Toyota Probox</option>
+                        <option>Toyota Porte</option>
+                        <option>Nissan Serena</option>
+                        <option>Nissan AD</option>
+                        <option>Suzuki Ciaz</option>
+                        <option>Honda Freed</option>
+                        <option>Daihatsu Move</option>
+                        <option>Toyota Pixis</option>
+                        <option>Nissan Juke</option>
+                        <option>Mazda Scrum</option>
+                        <option>FAW X-PV</option>
+                        <option>Honda Grace</option>
+                        <option>Honda N</option>
+                        <option>Honda Vamos</option>
+                        <option>Haval Jolion</option>
+                        <option>Suzuki Baleno</option>
+                        <option>Proton X70</option>
+                        <option>BMW 3</option>
+                        <option>BAIC BJ40</option>
+                        <option>Nissan Clipper</option>
+                        <option>Mazda Carol</option>
+                        <option>Nissan Tiida</option>
+                        <option>Daihatsu Cast</option>
+                        <option>Suzuki Xbee</option>
+                        <option>Honda Insight</option>
+                        <option>Audi A3</option>
+                        <option>Honda Thats</option>
+                        <option>KIA Spectra</option>
+                        <option>Toyota Platz</option>
+                        <option>Toyota Town</option>
+                        <option>Toyota Belta</option>
+                        <option>Honda Airwave</option>
+                        <option>Toyota Crown</option>
+                        <option>Cadillac Escalade</option>
+                        <option>Suzuki Margalla</option>
+                        <option>Mitsubishi Lancer</option>
+                        <option>Ford Crown</option>
+                        <option>Honda Fit</option>
+                        <option>Nissan Sunny</option>
+                        <option>Mitsubishi Ek</option>
+                        <option>JW Forland</option>
+                        <option>Honda HR-V</option>
+                        <option>Adam Revo</option>
+                        <option>Nissan Navara</option>
+                        <option>Subaru Pleo</option>
+                        <option>Nissan Otti</option>
+                        <option>Toyota Tundra</option>
+                        <option>Toyota Aygo</option>
+                        <option>Nissan Kicks</option>
+                        <option>Toyota Surf</option>
+                        <option>Jetour Dashing</option>
+                        <option>Suzuki Vitara</option>
+                        <option>Jeep M</option>
+                        <option>Ford F</option>
+                        <option>Daihatsu Boon</option>
+                        <option>Nissan Patrol</option>
+                        <option>Toyota Hiace</option>
+                        <option>Peugeot 2008</option>
+                        <option>Toyota Allion</option>
+                        <option>SsangYong Stavic</option>
+                        <option>Suzuki Potohar</option>
+                        <option>BMW 2</option>
+                        <option>Toyota Voxy</option>
+                        <option>Chevrolet Exclusive</option>
+                        <option>FAW V2</option>
+                        <option>KIA Sorento</option>
+                        <option>Ferrari Roma</option>
+                        <option>Mazda B2200</option>
+                        <option>Honda Inspire</option>
+                        <option>Mazda RX8</option>
+                        <option>Mitsubishi Fto</option>
+                        <option>Datsun 120</option>
+                        <option>Mazda 323</option>
+                        <option>Mazda Flair</option>
+                        <option>Hyundai H-100</option>
+                        <option>Toyota Rav4</option>
+                        <option>Mazda 626</option>
+                        <option>Chevrolet Joy</option>
+                        <option>Nissan Skyline</option>
+                        <option>Proton Saga</option>
+                        <option>Dongfeng Box</option>
+                        <option>Nissan March</option>
+                        <option>Chevrolet Optra</option>
+                        <option>Lexus LX</option>
+                        <option>Jeep Cj</option>
+                        <option>Hyundai Excel</option>
+                        <option>Daihatsu Tanto</option>
+                        <option>Toyota Roomy</option>
+                        <option>Toyota Camry</option>
+                        <option>Bentley Continental</option>
+                        <option>Honda Acty</option>
+                        <option>Master Foton</option>
+                        <option>Range Rover</option>
+                        <option>Sokon Mpv</option>
+                        <option>Honda Cross</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="model-year">Model Year</label>
+                    <input type="number" id="model-year" placeholder="e.g. 2020" min="1990" max="2026" required>
+                </div>
+            </div>
+
+           
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="mileage">Mileage (km)</label>
+                    <input type="number" id="mileage" placeholder="e.g. 50000" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="engine">Engine Capacity (cc)</label>
+                    <input type="number" id="engine" placeholder="e.g. 1800" required>
+                </div>
+            </div>
+
+            <!-- Row 3: Fuel Type + Transmission -->
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fuel">Fuel Type</label>
+                    <select id="fuel" required>
+                        <option value="">Select fuel type</option>
+                        <option>Petrol</option>
+                        <option>Diesel</option>
+                        <option>Hybrid</option>
+                        <option>Electric</option>
+                        <option>CNG</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="transmission">Transmission</label>
+                    <select id="transmission" required>
+                        <option value="">Select transmission</option>
+                        <option>Manual</option>
+                        <option>Automatic</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Row 4: City -->
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="city">City</label>
+                    <select id="city" required>
+                        <option value="">Select city</option>
+                        <option>Karachi</option>
+                        <option>Lahore</option>
+                        <option>Islamabad</option>
+                        <option>Rawalpindi</option>
+                        <option>Peshawar</option>
+                        <option>Quetta</option>
+                        <option>Faisalabad</option>
+                        <option>Multan</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Submit -->
+            <button type="submit" class="btn-predict">Predict Price</button>
+
+        </form>
+
+        <!-- Result -->
+        <div class="result-box" id="result-box">
+            <h3>Estimated Price</h3>
+            <div class="result-price" id="result-price">IN PKR</div>
+            <div class="result-range" id="result-range">Range: -- Lakhs – -- Lakhs</div>
+           
+        </div>
+
+    </div>
+
+    
+   
+
+    <script src="script.js"></script>
+</body>
+</html>

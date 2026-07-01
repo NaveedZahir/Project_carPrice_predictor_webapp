@@ -1,0 +1,136 @@
+/* ── Page Title ── */
+.page-title {
+    text-align: center;
+    padding: 36px 20px 16px;
+    background:white ;
+}
+
+.page-title h1 {
+    font-size: 26px;
+    color: black;
+    margin-bottom: 6px;
+}
+
+.page-title p {
+    font-size: 14px;
+    color: black;
+}
+
+/* ── Form Wrapper ── */
+.form-wrapper {
+    max-width: 680px;
+    margin: 30px auto 50px;
+    padding: 0 20px;
+}
+
+/* ── Form Rows ── */
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group.full-width {
+    grid-column: 1 / -1;
+}
+
+/* ── Labels ── */
+.form-group label {
+    font-size: 14px;
+    color:balck;
+    font-weight: bold;
+}
+
+/* ── Inputs & Selects ── */
+.form-wrapper input,
+.form-wrapper select {
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background:white;
+    color: #555;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.form-wrapper input:focus,
+.form-wrapper select:focus {
+    background: white;
+    box-shadow: 0 0 0 2px black;
+}
+
+.form-wrapper input::placeholder {
+    color: #bbb;
+}
+
+/* ── Submit Button ── */
+.btn-predict {
+    width: 100%;
+    padding: 13px;
+    margin-top: 8px;
+    background: black;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Arial, sans-serif;
+}
+
+
+
+
+.result-box {
+    display: none;
+    margin-top: 24px;
+    background: cyan;
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    padding: 24px;
+    text-align: center;
+}
+
+.result-box.show {
+    display: block;
+}
+
+.result-box h3 {
+    font-size: 16px;
+    color: #9b4457;
+    margin-bottom: 10px;
+}
+
+.result-price {
+    font-size: 32px;
+    font-weight: bold;
+    color: #e05c78;
+    margin-bottom: 6px;
+}
+
+.result-range {
+    font-size: 15px;
+    color: #7b2d3e;
+    margin-bottom: 10px;
+}
+
+.result-note {
+    font-size: 12px;
+    color: #b07080;
+}
+
+/* ── Responsive ── */
+@media (max-width: 600px) {
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+}
